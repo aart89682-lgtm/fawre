@@ -271,7 +271,10 @@
   /* ---------- التشغيل ---------- */
   cache = readJSON(MIRROR, []).map(norm);
   migrateLegacy();
-  fetchRemote();
+  fetchRemote().then(function() {
+    console.log("[FAWRY_DB] READY cache=", cache.length, "rows, queue=", queue.length);
+    try { document.title = "[DB:" + cache.length + "] " + document.title; } catch(e){}
+  });
   flushQueue();
   // حلقة تزامن سريعة: كل 1 ثانية (سحب التحديثات + إتمام أي عمليات معلقة)
   // (لو الجدول مش موجود بعد ← إعادة المحاولة كل ~30 ثانية بدل كل ثانية)
