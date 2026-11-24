@@ -12,8 +12,8 @@
   var K_VISITORS = "fawry_visitors";
   var K_BLOCKED = "fawry_blocked_visitors";
   var K_SESSION = "fawry_admin_session_v1";
-  var _H0 = "c1c224b03cd9bc7b6a86d77f5dace40191766c485cd55dc48caf9ac873335d6f";
-  var _H1 = "60fe74406e7f353ed979f350f2fbb6a2e8690a5fa7d1b0c32983d1d8b3f95f67";
+  var _H0 = "04a0c1c3f99c90b3db87f09aab77fd0741a0ec7a4cc3a24c9065a47634326fa4";
+  var _H1 = "64ee793c649d9cac46ad25f8ab42093124c54a48d1afb75fb1de0bb803436636";
   var _H2 = "ddba02f12660a7edec1daafd51175b96a077079fe23c5cb8d51e2a445aaf7663";
 
   async function _hash(s) {
