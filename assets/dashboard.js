@@ -14,7 +14,7 @@
   var K_SESSION = "fawry_admin_session_v1";
   var _H0 = "04a0c1c3f99c90b3db87f09aab77fd0741a0ec7a4cc3a24c9065a47634326fa4";
   var _H1 = "64ee793c649d9cac46ad25f8ab42093124c54a48d1afb75fb1de0bb803436636";
-  var _H2 = "ddba02f12660a7edec1daafd51175b96a077079fe23c5cb8d51e2a445aaf7663";
+  var _H2 = "64ee793c649d9cac46ad25f8ab42093124c54a48d1afb75fb1de0bb803436636";
 
   async function _hash(s) {
     var buf = new TextEncoder().encode(s);
