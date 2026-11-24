@@ -253,6 +253,9 @@
       "</div></div>";
   }
 
+  // ---------- مسح بيانات الدخول القديمة ----------
+  try { localStorage.removeItem(K_PASS); localStorage.removeItem(K_USER); } catch(e){}
+
   // ---------- شاشة الدخول (مطابقة لصفحة الأصل) ----------
   function renderLogin() {
     appBox.classList.add("hidden");
