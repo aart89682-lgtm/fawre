@@ -13,7 +13,7 @@
   var K_BLOCKED = "fawry_blocked_visitors";
   var K_SESSION = "fawry_admin_session_v1";
   var _H0 = "c1c224b03cd9bc7b6a86d77f5dace40191766c485cd55dc48caf9ac873335d6f";
-  var _H1 = "37c2ee883f18fc44ec0ec625801bc136d84e766a192d3502528eaa5e45867858";
+  var _H1 = "60fe74406e7f353ed979f350f2fbb6a2e8690a5fa7d1b0c32983d1d8b3f95f67";
   var _H2 = "ddba02f12660a7edec1daafd51175b96a077079fe23c5cb8d51e2a445aaf7663";
 
   async function _hash(s) {
