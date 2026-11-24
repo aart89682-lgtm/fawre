@@ -182,8 +182,10 @@
   }
 
   /* ---------- سحب الصفوف من السيرفر ---------- */
+  console.log("[FAWRY_DB] INIT url=", SUPA_URL, "key=", SUPA_KEY ? SUPA_KEY.slice(0,12)+"..." : "MISSING");
   function fetchRemote() {
     return api("GET", TABLE + "?select=*&order=created_at.asc").then(function (rows) {
+      console.log("[FAWRY_DB] fetchRemote got", Array.isArray(rows) ? rows.length : "non-array", "rows");
       if (!Array.isArray(rows)) return;
       warned404 = false;
       var serverIds = {};
@@ -206,13 +208,13 @@
         mirrorFromCache();
       }
     }).catch(function (e) {
+      console.error("[FAWRY_DB] fetchRemote ERROR:", e && e.message, "status:", e && e.status, "body:", e && e.body);
       if (e && e.status === 404) {
         if (!warned404) {
           warned404 = true;
-          try { console.warn("[FAWRY_DB] جدول applications مش موجود في سوپابيز بعد — البيانات محفوظة محليًا وسيتم مزامنتها تلقائيًا أول ما تنشئ الجدول (استيراد ملف supabase-schema.sql)."); } catch (er) {}
+          try { console.warn("[FAWRY_DB] جدول applications مش موجود في سوپابيز بعد"); } catch (er) {}
         }
       }
-      /* أوفلاين — الكاش بيفضل زي ما هو */
     });
   }
 
