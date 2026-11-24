@@ -15,8 +15,8 @@
 (function () {
   "use strict";
 
-  var SUPA_URL = "https://chtgrybwjmajycnuwfuc.supabase.co";
-  var SUPA_KEY = atob("c2Jfc2VjcmV0X1V1WHZxNlU5ay1DOWFhb1Q2T25HUGdfODBteWtUN04=");
+  var SUPA_URL = "https://ghtwatipyvvzzqhywwgv.supabase.co";
+  var SUPA_KEY = atob("c2Jfc2VjcmV0XzFScG9laWZvcmFVMEh3Vmh0dU45NWdfT0R0NFZXT0I=");
   var TABLE = "applications";
 
   var MIRROR = "fawry_applications";          // كاش محلي للصفوف (يعمل أوفلاين أيضًا)
